@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      data-i18n="meta.description"
+      content="Хостел «Кальмиус» — общежитие повышенной комфортности в центре Донецка. Койко-место от 475₽ до 850₽. Размещение сотрудников предприятий и строительных бригад до 200 человек."
+    />
+    <title data-i18n="meta.title">Хостел «Кальмиус» — Донецк</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container header__bar">
+        <a class="logo" href="#hero" data-i18n-aria="logo.aria" aria-label="Хостел Кальмиус">
+          <img class="logo__img" src="logo.png" height="85" data-i18n-alt="logo.aria" alt="Kalmius Hostel" />
+          <span class="logo__text">
+            <span class="logo__name" data-i18n="logo.name" data-cms-key="logo.name">Хостел «Кальмиус»</span>
+            <span class="logo__slogan" data-i18n="logo.slogan" data-cms-key="logo.slogan">Комфорт, Уют, Забота</span>
+          </span>
+        </a>
+
+        <div class="header__panel" id="nav">
+          <nav class="nav" data-i18n-aria="nav.aria" aria-label="Основное меню">
+            <a href="#hero" data-i18n="nav.home">Главная</a>
+            <a href="#about" data-i18n="nav.about">О нас</a>
+            <a href="#rooms" data-i18n="nav.rooms">Номера и Цены</a>
+            <a href="#amenities" data-i18n="nav.amenities">Удобства</a>
+            <a href="#rules" data-i18n="nav.rules">Правила и Оплата</a>
+            <a href="#location" data-i18n="nav.location">Локация и Карта</a>
+          </nav>
+
+          <div class="header__actions">
+            <div class="phones" id="phonesSwitcher">
+              <a class="header__phone" href="tel:+79494593445" title="+7 (949) 459-34-45" data-i18n="contact.phone1" data-cms-key="contact.phone1">+7 (949) 459-34-45</a>
+              <button
+                class="phones__btn"
+                id="phonesBtn"
+                type="button"
+                aria-expanded="false"
+                aria-controls="phonesMenu"
+                data-i18n-aria="header.phones"
+                aria-label="Все телефоны"
+              >
+                <span></span>
+              </button>
+              <ul class="phones__menu" id="phonesMenu" hidden>
+                <li><a href="tel:+79494593445" data-i18n="contact.phone1" data-cms-key="contact.phone1">+7 (949) 459-34-45</a></li>
+                <li><a href="tel:+79496211420" data-i18n="contact.phone2" data-cms-key="contact.phone2">+7 (949) 621-14-20</a></li>
+                <li><a href="tel:+79493736642" data-i18n="contact.phone3" data-cms-key="contact.phone3">+7 (949) 373-66-42</a></li>
+              </ul>
+            </div>
+
+            <a
+              class="btn btn--accent header__telegram telegram-button"
+              href="https://t.me/hostel_donetsk"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="t.me/hostel_donetsk"
+              data-i18n="header.telegram"
+            >
+              Telegram
+            </a>
+          </div>
+        </div>
+
+        <div class="header__tools">
+          <div class="lang" id="langSwitcher">
+            <button
+              class="lang__btn"
+              id="langBtn"
+              type="button"
+              aria-haspopup="listbox"
+              aria-expanded="false"
+              aria-controls="langMenu"
+              data-i18n-aria="lang.label"
+              aria-label="Выбор языка"
+            >
+              <span class="lang__code" id="langCode">RU</span>
+            </button>
+            <ul class="lang__menu" id="langMenu" role="listbox" hidden>
+              <li><button type="button" role="option" data-lang="ru" aria-selected="true"><span>🇷🇺</span><span>RU</span><span data-i18n="lang.ru">Русский</span></button></li>
+              <li><button type="button" role="option" data-lang="en"><span>🇬🇧</span><span>EN</span><span data-i18n="lang.en">English</span></button></li>
+              <li><button type="button" role="option" data-lang="uz"><span>🇺🇿</span><span>UZ</span><span data-i18n="lang.uz">O‘zbekcha</span></button></li>
+              <li><button type="button" role="option" data-lang="kk"><span>🇰🇿</span><span>KK</span><span data-i18n="lang.kk">Қазақша</span></button></li>
+              <li><button type="button" role="option" data-lang="de"><span>🇩🇪</span><span>DE</span><span data-i18n="lang.de">Deutsch</span></button></li>
+              <li><button type="button" role="option" data-lang="tr"><span>🇹🇷</span><span>TR</span><span data-i18n="lang.tr">Türkçe</span></button></li>
+              <li><button type="button" role="option" data-lang="fr"><span>🇫🇷</span><span>FR</span><span data-i18n="lang.fr">Français</span></button></li>
+              <li><button type="button" role="option" data-lang="es"><span>🇪🇸</span><span>ES</span><span data-i18n="lang.es">Español</span></button></li>
+              <li><button type="button" role="option" data-lang="zh"><span>🇨🇳</span><span>ZH</span><span data-i18n="lang.zh">中文</span></button></li>
+              <li><button type="button" role="option" data-lang="ar"><span>🇸🇦</span><span>AR</span><span data-i18n="lang.ar">العربية</span></button></li>
+            </ul>
+          </div>
+
+          <button
+            class="menu-btn"
+            id="menuBtn"
+            type="button"
+            data-i18n-aria="header.menuOpen"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="nav"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero main-section" id="hero">
+        <canvas class="hero__leaves" id="heroLeaves" aria-hidden="true"></canvas>
+
+        <div class="container hero__content">
+          <div class="hero__copy text-container">
+            <p class="kicker" data-i18n="hero.kicker" data-cms-key="hero.kicker">Хостел «Кальмиус»</p>
+            <p class="hero__place h2-style description-block" data-i18n="hero.place" data-cms-key="hero.place">Общежитие повышенной комфортности в центре города</p>
+            <h1 data-i18n="hero.title" data-cms-key="hero.title">Комфортное проживание в Донецке</h1>
+            <p class="hero__tagline h3-style" data-i18n="hero.tagline" data-cms-key="hero.tagline">Комфорт, Уют, Забота</p>
+            <p class="badge" data-i18n="hero.badge" data-cms-key="hero.badge">До 200 человек • сотрудники предприятий и строительные бригады</p>
+          </div>
+          <div class="hero__visual" aria-hidden="true">
+            <img src="hero-hostel.png" alt="" width="720" height="720" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container">
+          <div class="section__head">
+            <p class="kicker" data-i18n="about.kicker" data-cms-key="about.kicker">О нас</p>
+            <h2 data-i18n="about.title" data-cms-key="about.title">Хостел «Кальмиус»</h2>
+            <p data-i18n="about.text" data-cms-key="about.text">
+              Общежитие повышенной комфортности в центре города. Размещаем сотрудников предприятий и строительные бригады — до 200 человек.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section rooms" id="rooms">
+        <div class="container">
+          <div class="section__head">
+            <p class="kicker" data-i18n="rooms.kicker" data-cms-key="rooms.kicker">Номера и цены</p>
+            <h2 data-i18n="rooms.title" data-cms-key="rooms.title">Категории мест</h2>
+            <p data-i18n="rooms.lead" data-cms-key="rooms.lead">Эконом, стандарт, повышенный комфорт и размещение бригад — подберите вариант под задачу.</p>
+          </div>
+
+          <p class="price-banner" data-i18n="rooms.priceRange" data-cms-key="rooms.priceRange">койко-место от 475₽ в сутки</p>
+
+          <div class="rooms__grid">
+            <article class="card">
+              <div class="card__image">
+                <span data-i18n="rooms.economy.tag" data-cms-key="rooms.economy.tag">Эконом</span>
+              </div>
+              <div class="card__body">
+                <h3 data-i18n="rooms.economy.title" data-cms-key="rooms.economy.title">Эконом койко-место</h3>
+                <p class="price"><span data-i18n="rooms.economy.price" data-cms-key="rooms.economy.price">от 475₽</span> <span data-i18n="rooms.economy.unit" data-cms-key="rooms.economy.unit">/ койко-место в сутки</span></p>
+                <ul>
+                  <li data-i18n="rooms.economy.f1" data-cms-key="rooms.economy.f1">Удобные двухъярусные кровати</li>
+                  <li class="wifi" data-i18n="rooms.economy.f2" data-cms-key="rooms.economy.f2">Бесплатный Wi-Fi</li>
+                  <li data-i18n="rooms.economy.f3" data-cms-key="rooms.economy.f3">Чистое постельное бельё</li>
+                  <li data-i18n="rooms.economy.f4" data-cms-key="rooms.economy.f4">Общая кухня, душ и туалет</li>
+                </ul>
+                <a class="btn btn--accent btn--full" href="tel:+79494593445" title="+7 (949) 459-34-45" data-i18n="rooms.economy.book">Забронировать</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__image">
+                <span data-i18n="rooms.standard.tag" data-cms-key="rooms.standard.tag">Стандарт</span>
+              </div>
+              <div class="card__body">
+                <h3 data-i18n="rooms.standard.title" data-cms-key="rooms.standard.title">Стандарт койко-место</h3>
+                <p class="price"><span data-i18n="rooms.standard.price" data-cms-key="rooms.standard.price">от 850₽</span> <span data-i18n="rooms.standard.unit" data-cms-key="rooms.standard.unit">/ койко-место в сутки</span></p>
+                <ul>
+                  <li data-i18n="rooms.standard.f1" data-cms-key="rooms.standard.f1">Комфортные полуторные кровати</li>
+                  <li data-i18n="rooms.standard.f2" data-cms-key="rooms.standard.f2">Номера для семейных пар / супругов</li>
+                  <li data-i18n="rooms.standard.f3" data-cms-key="rooms.standard.f3">В комнате: шифоньер, тумбочки, стол и стулья</li>
+                  <li class="wifi" data-i18n="rooms.standard.f4" data-cms-key="rooms.standard.f4">Бесплатный Wi-Fi</li>
+                </ul>
+                <a class="btn btn--accent btn--full" href="tel:+79494593445" title="+7 (949) 459-34-45" data-i18n="rooms.standard.book">Забронировать</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__image">
+                <span data-i18n="rooms.plus.tag" data-cms-key="rooms.plus.tag">Комфорт Plus</span>
+              </div>
+              <div class="card__body">
+                <h3 data-i18n="rooms.plus.title" data-cms-key="rooms.plus.title">Номера повышенной комфортности</h3>
+                <p class="price"><span data-i18n="rooms.plus.price" data-cms-key="rooms.plus.price">По запросу</span> <span data-i18n="rooms.plus.unit" data-cms-key="rooms.plus.unit">уточняйте цену</span></p>
+                <ul>
+                  <li data-i18n="rooms.plus.f1" data-cms-key="rooms.plus.f1">Отдельный вход и современные санузлы</li>
+                  <li data-i18n="rooms.plus.f2" data-cms-key="rooms.plus.f2">Мебель и матрасы высокого качества</li>
+                  <li data-i18n="rooms.plus.f3" data-cms-key="rooms.plus.f3">Техника: холодильник, стиральная машина, микроволновка, чайник, кофеварка</li>
+                  <li class="wifi" data-i18n="rooms.plus.f4" data-cms-key="rooms.plus.f4">Бесплатный Wi-Fi</li>
+                </ul>
+                <a class="btn btn--accent btn--full" href="tel:+79494593445" title="+7 (949) 459-34-45" data-i18n="rooms.plus.book">Забронировать / Уточнить</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__image">
+                <span data-i18n="rooms.groups.tag" data-cms-key="rooms.groups.tag">Для компаний</span>
+              </div>
+              <div class="card__body">
+                <h3 data-i18n="rooms.groups.title" data-cms-key="rooms.groups.title">Групповое размещение бригад</h3>
+                <p class="price"><span data-i18n="rooms.groups.price" data-cms-key="rooms.groups.price">от 570₽</span> <span data-i18n="rooms.groups.unit" data-cms-key="rooms.groups.unit">/ сутки</span></p>
+                <ul>
+                  <li data-i18n="rooms.groups.f1" data-cms-key="rooms.groups.f1">Специальные предложения для рабочих бригад и предприятий</li>
+                  <li data-i18n="rooms.groups.f2" data-cms-key="rooms.groups.f2">Размещение групп до 200 человек</li>
+                  <li data-i18n="rooms.groups.f3" data-cms-key="rooms.groups.f3">Гибкие формы оплаты</li>
+                  <li class="wifi" data-i18n="rooms.groups.f4" data-cms-key="rooms.groups.f4">Бесплатный Wi-Fi</li>
+                </ul>
+                <a class="btn btn--accent btn--full" href="tel:+79494593445" title="+7 (949) 459-34-45" data-i18n="rooms.groups.book">Запросить размещение</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section amenities" id="amenities">
+        <div class="container">
+          <div class="section__head">
+            <p class="kicker" data-i18n="amenities.kicker" data-cms-key="amenities.kicker">Удобства</p>
+            <h2 data-i18n="amenities.title" data-cms-key="amenities.title">Комфорт на территории</h2>
+            <p data-i18n="amenities.lead" data-cms-key="amenities.lead">Всё для комфортного проживания сотрудников, бригад и гостей города.</p>
+          </div>
+
+          <div class="features">
+            <article class="feature">
+              <span class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M7 8c1.5 2 3.2 3 5 3s3.5-1 5-3M7 16c1.5-2 3.2-3 5-3s3.5 1 5 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <h3 data-i18n="amenities.water.title" data-cms-key="amenities.water.title">Постоянное водоснабжение</h3>
+              <p data-i18n="amenities.water.text" data-cms-key="amenities.water.text">Горячая и холодная вода 24/7.</p>
+            </article>
+            <article class="feature">
+              <span class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 11h16v9H4v-9Z" stroke="currentColor" stroke-width="1.6"/><path d="M8 11V8a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <h3 data-i18n="amenities.kitchen.title" data-cms-key="amenities.kitchen.title">Оборудованные кухни</h3>
+              <p data-i18n="amenities.kitchen.text" data-cms-key="amenities.kitchen.text">Плиты, микроволновки, холодильники, посуда.</p>
+            </article>
+            <article class="feature">
+              <span class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 20V9.5A3.5 3.5 0 0 1 8.5 6H12v14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M12 10h5.5A2.5 2.5 0 0 1 20 12.5V20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <h3 data-i18n="amenities.bath.title" data-cms-key="amenities.bath.title">Чистые душевые и санузлы</h3>
+              <p data-i18n="amenities.bath.text" data-cms-key="amenities.bath.text">Регулярный уход за санитарными зонами.</p>
+            </article>
+            <article class="feature">
+              <span class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5c2.2-3.4 4.5-5 7-5s4.8 1.6 7 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M8.2 16c1.1-1.4 2.4-2.1 3.8-2.1s2.7.7 3.8 2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="19" r="1.1" fill="currentColor"/></svg>
+              </span>
+              <h3 data-i18n="amenities.wifi.title" data-cms-key="amenities.wifi.title">Бесплатный Wi-Fi</h3>
+              <p data-i18n="amenities.wifi.text" data-cms-key="amenities.wifi.text">Интернет на всей территории хостела.</p>
+            </article>
+            <article class="feature">
+              <span class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="10" width="18" height="8" rx="1.2" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 10V8.2A2.2 2.2 0 0 1 8.7 6h6.6A2.2 2.2 0 0 1 17.5 8.2V10" stroke="currentColor" stroke-width="1.6"/><circle cx="7.5" cy="18" r="1.3" fill="currentColor"/><circle cx="16.5" cy="18" r="1.3" fill="currentColor"/></svg>
+              </span>
+              <h3 data-i18n="amenities.parking.title" data-cms-key="amenities.parking.title">Бесплатная охраняемая парковка</h3>
+              <p data-i18n="amenities.parking.text" data-cms-key="amenities.parking.text">Автомобиль можно оставить на территории.</p>
+            </article>
+            <article class="feature">
+              <span class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6 19.5h12M8 19.5V8.5A4 4 0 0 1 12 4.5a4 4 0 0 1 4 4v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M8 12.5h8" stroke="currentColor" stroke-width="1.6"/></svg>
+              </span>
+              <h3 data-i18n="amenities.linen.title" data-cms-key="amenities.linen.title">Постель и уборка</h3>
+              <p data-i18n="amenities.linen.text" data-cms-key="amenities.linen.text">Регулярная смена постельного белья и уборка.</p>
+            </article>
+            <article class="feature feature--wide">
+              <span class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5 20 7v5c0 5-3.5 8.2-8 9.5C7.5 20.2 4 17 4 12V7l8-3.5Z" stroke="currentColor" stroke-width="1.6"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <h3 data-i18n="amenities.security.title" data-cms-key="amenities.security.title">Охрана и видеонаблюдение</h3>
+              <p data-i18n="amenities.security.text" data-cms-key="amenities.security.text">Круглосуточная охрана и видеонаблюдение на территории.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section info" id="rules">
+        <div class="container">
+          <div class="section__head">
+            <p class="kicker" data-i18n="info.kicker" data-cms-key="info.kicker">Правила и оплата</p>
+            <h2 data-i18n="info.title" data-cms-key="info.title">Важная информация</h2>
+            <p data-i18n="info.lead" data-cms-key="info.lead">Заезд, выезд и расчёт — в том числе для юридических лиц.</p>
+          </div>
+
+          <div class="info__grid info__grid--two">
+            <article class="info-card">
+              <h3 data-i18n="info.checkin.title" data-cms-key="info.checkin.title">Заезд и выезд</h3>
+              <p class="info-card__highlight" data-i18n="info.checkin.times" data-cms-key="info.checkin.times">Заезд с 14:00, выезд до 12:00</p>
+              <p data-i18n="info.checkin.note" data-cms-key="info.checkin.note">Круглосуточная стойка регистрации.</p>
+            </article>
+            <article class="info-card info-card--accent">
+              <h3 data-i18n="info.payment.title" data-cms-key="info.payment.title">Оплата</h3>
+              <p data-i18n="info.payment.text" data-cms-key="info.payment.text">Наличный и безналичный расчет с оформлением документов для организаций.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="location">
+        <div class="container contact__layout">
+          <div class="contact__info">
+            <p class="kicker" data-i18n="contact.kicker" data-cms-key="contact.kicker">Локация и карта</p>
+            <h2 data-i18n="contact.title" data-cms-key="contact.title">Контакты и адрес</h2>
+            <p class="contact__intro" data-i18n="contact.intro" data-cms-key="contact.intro">
+              Хостел «Кальмиус» — общежитие повышенной комфортности в центре города. Звоните или пишите в Telegram.
+            </p>
+            <ul class="details">
+              <li>
+                <span data-i18n="contact.addressLabel">Адрес</span>
+                <strong data-i18n="contact.address" data-cms-key="contact.address">г. Донецк, ул. Левобережная, 60</strong>
+              </li>
+              <li>
+                <span data-i18n="contact.phonesLabel">Телефоны</span>
+                <div class="contact__links">
+                  <a class="contact__link" href="tel:+79494593445" title="+7 (949) 459-34-45" data-i18n="contact.phone1" data-cms-key="contact.phone1">+7 (949) 459-34-45</a>
+                  <a class="contact__link" href="tel:+79496211420" title="+7 (949) 621-14-20" data-i18n="contact.phone2" data-cms-key="contact.phone2">+7 (949) 621-14-20</a>
+                  <a class="contact__link" href="tel:+79493736642" title="+7 (949) 373-66-42" data-i18n="contact.phone3" data-cms-key="contact.phone3">+7 (949) 373-66-42</a>
+                </div>
+              </li>
+              <li>
+                <span data-i18n="contact.emailLabel">Email</span>
+                <div class="contact__links">
+                  <a class="contact__link" href="mailto:sergeyisdonetsk@yandex.ru" data-i18n="contact.email" data-cms-key="contact.email">sergeyisdonetsk@yandex.ru</a>
+                </div>
+              </li>
+              <li>
+                <span data-i18n="contact.telegramLabel">Telegram</span>
+                <div class="contact__links">
+                  <a class="contact__link" href="https://t.me/hostel_donetsk" target="_blank" rel="noopener noreferrer" title="t.me/hostel_donetsk" data-i18n="contact.telegramHandle">@hostel_donetsk</a>
+                </div>
+              </li>
+            </ul>
+            <div class="contact__actions">
+              <a class="btn btn--accent" href="tel:+79494593445" data-i18n="contact.call">Позвонить</a>
+              <a class="btn btn--ghost" href="https://t.me/hostel_donetsk" target="_blank" rel="noopener noreferrer" title="t.me/hostel_donetsk" data-i18n="contact.telegram">Написать в Telegram</a>
+            </div>
+          </div>
+
+          <div class="map-block">
+            <div class="map-frame">
+              <iframe
+                id="mapFrame"
+                title="Хостел «Кальмиус» на карте"
+                data-i18n-title="maps.iframeTitle"
+                src="https://yandex.ru/map-widget/v1/?text=%D0%B3.%20%D0%94%D0%BE%D0%BD%D0%B5%D1%86%D0%BA%2C%20%D1%83%D0%BB.%20%D0%9B%D0%B5%D0%B2%D0%BE%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D0%B0%D1%8F%2C%2060&z=16"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__bar">
+        <p data-i18n="footer.copy" data-cms-key="footer.copy">© 2026 Хостел «Кальмиус». г. Донецк, ул. Левобережная, 60</p>
+        <div class="footer__links">
+          <a href="tel:+79494593445" data-i18n="footer.call">Позвонить</a>
+          <a href="https://t.me/hostel_donetsk" target="_blank" rel="noopener noreferrer" title="t.me/hostel_donetsk" data-i18n="footer.telegram">Написать в Telegram</a>
+          <button class="admin-login" id="adminLoginBtn" type="button" data-i18n-title="admin.lock" title="Admin" aria-label="Admin">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a5 5 0 0 1 5 5v2h1.2A1.8 1.8 0 0 1 20 10.8v9.4A1.8 1.8 0 0 1 18.2 22H5.8A1.8 1.8 0 0 1 4 20.2v-9.4A1.8 1.8 0 0 1 5.8 9H7V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 9.2 7v2h5.6V7A2.8 2.8 0 0 0 12 4.2Z"/></svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <div class="admin-bar" id="adminBar" hidden>
+      <p class="admin-bar__status" data-i18n="admin.status">Режим редактирования</p>
+      <div class="admin-bar__actions">
+        <button class="btn btn--accent" id="adminSaveBtn" type="button" data-i18n="admin.save">Сохранить</button>
+        <button class="btn btn--ghost" id="adminLogoutBtn" type="button" data-i18n="admin.logout">Выйти</button>
+      </div>
+    </div>
+
+    <div class="admin-modal" id="adminModal" hidden>
+      <div class="admin-modal__card">
+        <h3 data-i18n="admin.loginTitle">Вход администратора</h3>
+        <label for="adminPassword" data-i18n="admin.password">Пароль</label>
+        <input id="adminPassword" type="password" autocomplete="current-password" data-i18n-placeholder="admin.passwordPlaceholder" placeholder="••••••••" />
+        <p class="admin-modal__error" id="adminError" hidden data-i18n="admin.error">Неверный пароль</p>
+        <div class="admin-modal__actions">
+          <button class="btn btn--ghost" id="adminCancelBtn" type="button" data-i18n="admin.cancel">Отмена</button>
+          <button class="btn btn--accent" id="adminSubmitBtn" type="button" data-i18n="admin.enter">Войти</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" id="cmsToast" hidden data-i18n="admin.toastOk">Изменения успешно сохранены!</div>
+
+    <div class="sticky-bar" id="stickyBar">
+      <a class="btn btn--accent" href="tel:+79494593445" data-i18n="sticky.call">Позвонить</a>
+      <a class="btn btn--ghost" href="https://t.me/hostel_donetsk" target="_blank" rel="noopener noreferrer" title="t.me/hostel_donetsk" data-i18n="sticky.telegram">Написать в Telegram</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
