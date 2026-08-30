@@ -17,8 +17,8 @@ const languages = {
 const translations = {
   ru: {
     meta: {
-      title: "Хостел «Кальмиус» — Донецк",
-      description: "Хостел «Кальмиус» — общежитие повышенной комфортности в центре Донецка. Койко-место от 475₽ до 850₽. Размещение сотрудников предприятий и строительных бригад до 200 человек.",
+      title: "Хостел в Донецке «Кальмиус» — койко-место, ночлег и общежитие для бригад",
+      description: "Хостел «Кальмиус» в Донецке: койко-место от 475₽, недорогой ночлег и комфортное проживание. Общежитие для рабочих и строительных бригад до 200 человек. Гостиница в центре — ул. Левобережная, 60. Где переночевать в Донецке — звоните +7 (949) 459-34-45.",
     },
     logo: { aria: "Хостел Кальмиус", mark: "К", name: "Хостел «Кальмиус»", slogan: "Комфорт, Уют, Забота" },
     nav: { aria: "Основное меню", home: "Главная", about: "О нас", rooms: "Номера и Цены", amenities: "Удобства", rules: "Правила и Оплата", location: "Локация и Карта" },
@@ -653,6 +653,14 @@ function applyTranslations(lang) {
 
   const description = document.querySelector('meta[name="description"]');
   if (description) description.setAttribute("content", dict.meta.description);
+
+  const socialDescription = dict.meta.description;
+  document.querySelectorAll('meta[property="og:title"], meta[name="twitter:title"]').forEach((el) => {
+    el.setAttribute("content", dict.meta.title);
+  });
+  document.querySelectorAll('meta[property="og:description"], meta[name="twitter:description"]').forEach((el) => {
+    el.setAttribute("content", socialDescription);
+  });
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     if (el.isContentEditable) return;
